@@ -21,7 +21,6 @@ the installer will append this file to the app vendored assets here: 'vendor/ass
 .drift-link {
   float: left;
   cursor: zoom-in;
-  width: 100%;
 }
 
 #main-image{
