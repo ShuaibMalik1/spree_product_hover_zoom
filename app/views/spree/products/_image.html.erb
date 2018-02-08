@@ -2,9 +2,7 @@
   <%= image_tag image.attachment.url(:product), :itemprop => "image" %>
 <% else %>
 	<% img_url = @product.images.present? ? @product.images.first.attachment.url(:large) : '' %>
-	<div style="display:inline-block">
-	  <a data-luminous data-drift data-large="<% img_url %>"  href="<%= img_url %>" class="drift-link">
-	    <%= product_image(@product, :itemprop => "image", data: { image: '' }) %>
-	  </a>
-	</div>  
+  <a data-luminous data-drift data-large="<% img_url %>" href="<%= img_url %>" class="drift-link">
+    <%= product_image(@product, :itemprop => "image", data: { image: '' }) %>
+  </a>
 <% end %>
